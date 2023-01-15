@@ -9,7 +9,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    min-width: 430px;
+    min-width: 400px;
     box-shadow: -8px 9px 22px -5px;
     background-image: linear-gradient(75deg,blue,purple);
 }
