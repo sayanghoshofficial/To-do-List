@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <!-- add fevricon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Connect awsome front for icons -->
+  <script src="https://kit.fontawesome.com/7cb44feacc.js" crossorigin="anonymous"></script>
+  <!-- Link to css file -->
+  <link rel="stylesheet" type="text/css" href="todo.css">
+   <!--Link to the javaScript file  -->
+   <script type="text/javaScript" src="todo.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Sayan's To-Do-List </h1>
+    </div>
+    <div class="input-div">
+      <!-- note book icon from awsome front -->
+      <i class='far fa-file-alt' "></i>
+      <!-- Input box for to do's -->
+      <input type="text" placeholder="Enter your Todo's..." id="input">
+      <!-- add button -->
+      <button type="submit" ><i class="fa-solid fa-circle-plus add"></i></button>
+      
+    </div>
+    <div class="completed-div">
+      <!-- completed task -->
+      <!-- tick icon -->
+      <div class="completed-left-div">
+        <i class="fa-solid fa-check-double tick" style="font-size: 15px;"></i>
+        <span class="completedAll">Completed all tasks</span>
+      </div>
+      
+      <p class="uncompleted All">Clear Completed</p>
+    </div>
+    <hr>
+    <div class="list_item">
+      <ul id="list">
+        <!-- <li>
+          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+          <label for="task1">Buy groceries</label>
+          <i class="fa-solid fa-trash delete" data-id="12"></i>
+        </li> -->
+      </ul>
+    </div>
+    <hr>
+    <div id="end">
+      <div id="task">
+        <p ><span id="total_task">0</span> task left</p>
+      </div>
+      <div id="end-right">
+        <!-- <p class="uncompleted All">Uncompleted All</p> -->
+        <p class="deleteAll">Delete All</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
