@@ -1,4 +1,4 @@
-// create all Element
+// create all Elements and array
 let tasks = [];
 const taskList = document.getElementById('list');
 const addTaskInput = document.getElementById('input');
@@ -35,8 +35,10 @@ function addTask(task){
         renderList();
         showNotification('Task added Successfully');
         return;
-    } 
-    showNotification('Task cannot be added!!!!');
+    }else{
+        showNotification('Task cannot be added!!!!');
+    }
+    
 }
 // markAsCompleted function
 function markAsCompleted(taskId){
@@ -89,10 +91,11 @@ function handledClickListener(e){
     if(target.className === 'fa-regular fa-trash-can delete'){
         const taskId = target.dataset.id;
         deleteTask(taskId);
-        showNotification('Task deleted Successfully!!!!');
+        showNotification('Task is deleted Successfully!!!!');
         return;
     }else if(target.className === 'custom-checkbox'){
         const taskId = target.id;
+        showNotification('Task is completed  Successfully!!!!');
         markAsCompleted(taskId);
         return;
     }else if(target.className ==='completedAll'){

@@ -45,6 +45,7 @@ input, i{
     top: -5px;
     font-size: 20px;
     border-radius: 18px;
+    outline: none;
 }
 .input_div,button{
     padding: 0;
