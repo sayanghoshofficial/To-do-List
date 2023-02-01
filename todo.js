@@ -85,7 +85,7 @@ function clickToAdd(){
 // click event handeler 
 function handledClickListener(e){
     const target = e.target;
-    if(target.className =='fa-solid fa-circle-plus add'){
+    if(target.className =='fa-solid fa-circle-plus add' || target.className === 'plus'){
         clickToAdd();
     }
     if(target.className === 'fa-regular fa-trash-can delete'){
